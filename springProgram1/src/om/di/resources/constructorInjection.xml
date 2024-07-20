@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="om.di.beans.Address" id="addId">    
+    	<constructor-arg value="2124"/>
+    	<constructor-arg value="Pune"/>
+    	<constructor-arg value="411041"/>
+    </bean>
+    
+    <bean class="om.di.beans.Student" id="stdId">    
+    	<constructor-arg value="Omkar"/>
+    	<constructor-arg value="001"/>
+    	<constructor-arg ref="addId"/>
+    </bean>
+    
+    <context:component-scan base-package="om.beans"/>
+        
+</beans>
