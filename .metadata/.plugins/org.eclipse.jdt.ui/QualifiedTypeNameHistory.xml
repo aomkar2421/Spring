@@ -2,14 +2,18 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="om.main.Main"/>
     <fullyQualifiedTypeName name="javax.management.loading.PrivateClassLoader"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
     <fullyQualifiedTypeName name="om.resources.springConfigFile"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
-    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
-    <fullyQualifiedTypeName name="om.beans.Students"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="om.beans.Students"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="om.di.resources.SpringConfig"/>
+    <fullyQualifiedTypeName name="om.di.beans.Address"/>
+    <fullyQualifiedTypeName name="om.di.beans.Student"/>
 </qualifiedTypeNameHistroy>
