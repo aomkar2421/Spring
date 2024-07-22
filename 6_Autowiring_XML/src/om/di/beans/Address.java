@@ -16,7 +16,14 @@ public class Address {
 	public void setPincode(int pincode) {
 		this.pincode = pincode;
 	}
-		
+	
+//	//Constructor Injection
+//	public Address(int houseno, String city, int pincode) {
+//		this.houseno = houseno;
+//		this.city = city;
+//		this.pincode = pincode;
+//	}
+	
 	@Override
 	public String toString() {
 		return houseno +", "+city+", "+pincode;

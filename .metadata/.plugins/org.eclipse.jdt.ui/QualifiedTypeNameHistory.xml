@@ -16,4 +16,6 @@
     <fullyQualifiedTypeName name="om.di.resources.SpringConfig"/>
     <fullyQualifiedTypeName name="om.di.beans.Address"/>
     <fullyQualifiedTypeName name="om.di.beans.Student"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 </qualifiedTypeNameHistroy>

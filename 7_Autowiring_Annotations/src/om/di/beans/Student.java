@@ -1,7 +1,6 @@
 package om.di.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Student {
 	
@@ -9,7 +8,6 @@ public class Student {
 	private int rollno;
 	
 	@Autowired
-	@Qualifier("addressObject2")
 	private Address address;
 	
 	//Setter Injection
@@ -32,7 +30,13 @@ public class Student {
 		this.address = address;
 	}
 	
-
+//	//Constructor Injection
+//	public Student(String name, int rollno, Address address) {
+//		this.name = name;
+//		this.rollno = rollno;
+//		this.address = address;
+//	}
+	
 	public void display() {
 		System.out.println("Name : "+name);
 		System.out.println("Roll No : "+rollno);

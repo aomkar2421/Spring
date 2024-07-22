@@ -10,30 +10,18 @@ import om.di.beans.Student;
 public class SpringConfig {
 	
 	@Bean
-	public Address addressObject1() {
+	public Address addressObject() {
 		//setter injection
 		Address add = new Address();
 		
 		add.setCity("Mumbai");
 		add.setHouseno(01);
-		add.setPincode(412104);
-				
+		add.setPincode(000000);
+			
 		return add;
 	}
 	
-	@Bean
-	public Address addressObject2() {
-		//setter injection
-		Address add = new Address();
-		
-		add.setCity("Pune");
-		add.setHouseno(91);
-		add.setPincode(411041);
-				
-		return add;
-	}
-		
-	@Bean
+	@Bean("stdId")
 	public Student studentObject() {
 		
 		//setter injection
@@ -41,7 +29,6 @@ public class SpringConfig {
 		
 		std.setName("AVI");
 		std.setRollno(001);
-//		std.setAddress(addressObject());
 		
 		return std;
 	}
