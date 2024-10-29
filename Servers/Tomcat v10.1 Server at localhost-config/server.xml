@@ -100,7 +100,7 @@
 				<Context docBase="11_MVC_BeCoder" path="/11_MVC_BeCoder" reloadable="true" source="org.eclipse.jst.jee.server:11_MVC_BeCoder"/>
 				<Context docBase="12_Spring_MVC_Form" path="/12_Spring_MVC_Form" reloadable="true" source="org.eclipse.jst.jee.server:12_Spring_MVC_Form"/>
 			    <Context docBase="13_Spring_Register" path="/13_Spring_Register" reloadable="true" source="org.eclipse.jst.jee.server:13_Spring_Register"/>
-			 </Host>
+			 <Context docBase="14_Employee_Management" path="/14_Employee_Management" reloadable="true" source="org.eclipse.jst.jee.server:14_Employee_Management"/></Host>
 		</Engine>
 	</Service>
 </Server>
