@@ -14,8 +14,7 @@
           http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
         ">
 
-	<context:component-scan
-		base-package="com.om.controller" />
+	<context:component-scan base-package="com.om" />
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -23,7 +22,9 @@
 		<property name="suffix" value=".jsp"></property>
 	</bean>
 
-	<tx:annotation-driven />
+	<tx:annotation-driven
+		transaction-manager="transactionManager" />
+
 
 	<bean name="ds"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -32,7 +33,7 @@
 			value="com.mysql.cj.jdbc.Driver" />
 
 		<property name="url"
-			value="jdbc:mysql://localhost:3306/spring_orm" />
+			value="jdbc:mysql://localhost:3306/emp_mngmt" />
 		<property name="username" value="root" />
 		<property name="password" value="password" />
 	</bean>
@@ -52,11 +53,15 @@
 			</props>
 		</property>
 
-		<property name="annotatedClasses">
+		<!-- <property name="annotatedClasses"> <list> <value>com.om.entity.Emp</value> 
+			</list> </property> -->
+
+		<property name="packagesToScan">
 			<list>
-				<value>com.om.entity.Emp</value>
+				<value>com.om.entity</value>
 			</list>
 		</property>
+
 	</bean>
 
 	<bean name="hibernateTemplate"

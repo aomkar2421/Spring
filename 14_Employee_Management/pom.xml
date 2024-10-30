@@ -49,7 +49,7 @@
 		<dependency>
 			<groupId>org.hibernate.orm</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>6.5.2.Final</version>
+			<version>6.2.11.Final</version> <!-- Use the latest stable version -->
 		</dependency>
 
 		<dependency>
@@ -57,7 +57,7 @@
 			<artifactId>mysql-connector-j</artifactId>
 			<version>9.0.0</version>
 		</dependency>
-					
+
 	</dependencies>
 
 	<build>
